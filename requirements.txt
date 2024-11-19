@@ -28,6 +28,7 @@ debugpy==1.8.5
 decorator==5.1.1
 defusedxml==0.7.1
 dnspython==2.7.0
+docopt==0.6.2
 ecdsa==0.19.0
 email_validator==2.2.0
 eventlet==0.37.0
@@ -50,7 +51,7 @@ Hypercorn==0.17.3
 hyperframe==6.0.1
 idna==3.10
 ipykernel==6.29.5
-ipython==8.14.0
+ipython==8.12.3
 ipywidgets==8.1.5
 isoduration==20.11.0
 itsdangerous==2.2.0
@@ -100,6 +101,7 @@ parso==0.8.4
 passlib==1.7.4
 pickleshare==0.7.5
 pillow==10.4.0
+pipreqs==0.5.0
 platformdirs==4.3.6
 priority==2.0.0
 prometheus_client==0.20.0
@@ -170,3 +172,4 @@ websockets==13.1
 Werkzeug==3.0.4
 widgetsnbextension==4.0.13
 wsproto==1.2.0
+yarg==0.1.9
