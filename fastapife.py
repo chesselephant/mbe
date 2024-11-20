@@ -9,13 +9,6 @@ import joblib
 
 # Initialize FastAPI app
 app = FastAPI()
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # React frontend's origin
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 # Define the input data model for incoming requests
 class SensorData(BaseModel):
