@@ -3,10 +3,12 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import numpy as np
 import pandas as pd
+import starlette.responses as _resp
 #from sklearn.preprocessing import StandardScaler
 #from sklearn.linear_model import LogisticRegression
 import joblib
 # Initialize FastAPI app
+
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
@@ -27,8 +29,8 @@ scaler = joblib.load('scaler.pkl')  # Assumes the scaler was saved in this file
 
 #home page
 @app.get("/")
-def index():
-    return {"Student Name":"Mamuyowi Onojaife Sunday"}
+async def root():
+    return _resp.RedirectResponse("/redoc")
 
 
 
