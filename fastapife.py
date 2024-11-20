@@ -6,7 +6,6 @@ import pandas as pd
 #from sklearn.preprocessing import StandardScaler
 #from sklearn.linear_model import LogisticRegression
 import joblib
-import os
 # Initialize FastAPI app
 app = FastAPI()
 app.add_middleware(
@@ -51,7 +50,3 @@ async def predict_anomaly(data: SensorData):
 # If you're running this locally, use: uvicorn app:app --reload
 
 
-if __name__ == "__main__":
-    import uvicorn
-    port = int(os.getenv("PORT", 8000))
-    uvicorn.run(app, host="0.0.0.0", port=port)
