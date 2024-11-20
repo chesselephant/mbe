@@ -25,10 +25,7 @@ class SensorData(BaseModel):
 model = joblib.load('logistic_regression_model.pkl')  # Assumes the model was saved in this file
 scaler = joblib.load('scaler.pkl')  # Assumes the scaler was saved in this file
 
-#home page
-@app.get("/")
-def index():
-    return {"Student Name":"Mamuyowi Onojaife Sunday"}
+
 
 
 # Endpoint to predict anomalies
