@@ -1,1 +1,1 @@
-web: gunicorn -w 2 -k uvicorn.workers.UvicornWorker fastapife:app
+web: gunicorn -k uvicorn.workers.UvicornWorker fastapife:app
