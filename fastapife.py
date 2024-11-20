@@ -3,8 +3,8 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
-from sklearn.linear_model import LogisticRegression
+#from sklearn.preprocessing import StandardScaler
+#from sklearn.linear_model import LogisticRegression
 import joblib
 
 # Initialize FastAPI app
